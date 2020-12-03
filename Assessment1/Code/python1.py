@@ -70,9 +70,11 @@ def one(x, y):
 
 def two(x):
 	
-	a = str(x)
-	newstring = a.replace("bert","")
-	
+	a = str(x).lower
+	start = '[:bert]'
+	end = '[bert:]'
+	newstring = a[a.find(start)+len(start):s.rfind(end)]
+
 	return newstring
 
 
@@ -248,12 +250,12 @@ def seven(x):
 
 	# You may need to create a list of numbers from 0 to i, take a look at help(range).
 
-def eight(n):
+def eight(f):
 
-	if n == 0:
+	if f == 0:
 		return 1 
 	else:
-		return n * eight(n-1)
+		return f * eight(n-1)
 
 
 	# <QUESTION 9>
