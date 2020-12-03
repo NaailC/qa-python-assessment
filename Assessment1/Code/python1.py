@@ -255,7 +255,7 @@ def eight(f):
 	if f == 0:
 		return 1 
 	else:
-		return f * eight(n-1)
+		return f * eight(f-1)
 
 
 	# <QUESTION 9>
